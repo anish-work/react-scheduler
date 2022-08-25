@@ -1,10 +1,19 @@
+import moment from 'moment'
 import React from 'react'
 
-import { ExampleComponent } from 'react-scheduler'
+import Calendar from 'react-scheduler'
 import 'react-scheduler/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <Calendar 
+      timeInterval={30} 
+      startDate={moment().toDate()}
+      data={[]}
+      sessionComponent={null}
+      headerCellComponent={null}
+    />
+  );
 }
 
 export default App
