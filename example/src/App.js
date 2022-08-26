@@ -1,19 +1,8 @@
-import moment from 'moment'
 import React from 'react'
-
-import Calendar from 'react-scheduler'
-import 'react-scheduler/dist/index.css'
+import Views from './views';
 
 const App = () => {
-  return (
-    <Calendar 
-      timeInterval={30} 
-      startDate={moment().toDate()}
-      data={[]}
-      sessionComponent={null}
-      headerCellComponent={null}
-    />
-  );
-}
+  return <Views />;
+};
 
-export default App
+export default App;
